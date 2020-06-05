@@ -1,0 +1,13 @@
+Group hierarchy,Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),S3 Intelligent - Tiering,0,2.91,34.92,USD,S3 INT storage (100 GB per month)
+My Estimate,US East (Ohio),Data Transfer,0,0,0.00,USD,"Data Transfer, Data transfer cost (0)"
+My Estimate,US East (Ohio),Amazon Virtual Private Cloud (VPC),0,70.2,842.40,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),Amazon EC2,0,88.21,1058.52,USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (Ohio),Elastic Load Balancing,0,56.21,674.52,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),Amazon RDS for MySQL,0,316.244,3794.93,USD,"Quantity (2), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (80 GB), Instance type (db.t3.large)"
+
+
+
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+"To reduce the cost I scaled down the database instances and decided to use RDS since smaller instances are allowed there. Furthermore I reduced the storage of the database since I saw in monitoring, that there is still some room left. As well the EC2 instances for the web server and hosting had to be scaled down to reach the cost budget."
